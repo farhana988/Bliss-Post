@@ -5,7 +5,7 @@ import Link from "next/link"
 async function Navbar() {
   const  {getUser} = getKindeServerSession()
   const user = await getUser()
-  console.log(user)
+  // console.log(user)
   return (
     <nav className="bg-gray-800 text-white fixed z-50 w-full p-3">
     <div className="flex justify-between items-center px-5 ">
