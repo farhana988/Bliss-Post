@@ -3,19 +3,21 @@
 import { useKindeAuth } from "@kinde-oss/kinde-auth-nextjs";
 import { useRouter } from "next/navigation";
 
+
+
 export default function Profile() {
   const { isAuthenticated, user, login, logout } = useKindeAuth();
   const router = useRouter();
 
     if (!isAuthenticated) {
 
-      router.push('/api/auth/login');
+      router.push('/api/auth/login', { mode: "no-cors" });
       return null; 
     }
 
   return (
     <>
-      <div className="min-h-screen pt-20">
+      <div className="min-h-screen pt-96">
       <h1 className="text-3xl font-bold text-center mb-6 text-gray-900">
              profile Page
           </h1>
