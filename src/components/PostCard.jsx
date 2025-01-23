@@ -11,7 +11,7 @@ function PostCard({post}) {
           <p className="text-gray-700 text-xs lg:text-sm flex-1">{post.body}</p>
           <Link 
           className="text-xs text-blue-600"
-          href={`/posts/${post.id}`}>
+          href={`/blog/${post.id}`}>
            Read more
           </Link>
         </div>
