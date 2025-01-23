@@ -11,13 +11,14 @@ async function fetchPost(id) {
 export default async function BlogDetails({ params }) {
 
 
-  const { id } = params;
+  const { id } = await params;
 
 
   const post = await fetchPost(id);
 
   return (
     <>
+    <div className="min-h-screen pt-20">
     <h1 className="text-3xl font-bold mb-6 text-gray-900 text-center py-10
     ">Details page</h1>
     <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
@@ -34,6 +35,7 @@ export default async function BlogDetails({ params }) {
        
       </button>
     </div>
+  </div>
   </div>
   </>
   );

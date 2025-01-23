@@ -6,7 +6,7 @@ export default async function Home() {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
   const posts = await res.json();
   return (
-    <div className="text-3xl p-4 container mx-auto">
+    <div className="text-3xl p-4 container mx-auto pt-10">
     <h1 className="text-4xl font-bold mb-6 text-center py-10
     ">Blog Posts</h1>
 
