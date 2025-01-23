@@ -23,9 +23,9 @@ export default function Profile() {
           <h1 className="text-3xl font-bold mb-6 text-gray-900">
             Welcome to your profile!
           </h1>
-          <p className="text-lg text-gray-700 mb-4">
+          {/* <p className="text-lg text-gray-700 mb-4">
             Hello, {user?.firstName} {user?.lastName}!
-          </p>
+          </p> */}
         
         </div>
       </div>
