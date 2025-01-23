@@ -11,7 +11,7 @@ async function Navbar() {
     <div className="flex justify-between items-center px-5 ">
       {/* Logo on the left */}
       <div className="flex items-center space-x-2">
-        <img src="/logo.png" alt="Logo" className="h-8 w-auto" /> 
+       logo
       </div>
 
       {/* Links centered */}
