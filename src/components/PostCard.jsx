@@ -6,6 +6,7 @@ function PostCard({post}) {
   return (
     <div>
          <div  className="bg-white p-4 rounded-lg shadow-md flex flex-col 
+         hover:scale-105 transition-transform duration-300
         h-40 lg:h-52">
           <h2 className="text-base lg:text-xl font-semibold mb-2">{post.title}</h2>
           <p className="text-gray-700 text-xs lg:text-sm flex-1">{post.body}</p>
