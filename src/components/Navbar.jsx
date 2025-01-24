@@ -7,11 +7,11 @@ async function Navbar() {
   const user = await getUser()
   // console.log(user)
   return (
-    <nav className="bg-gray-800 text-white fixed z-50 w-full p-3">
+    <nav className="bg-[#867cc2] text-white fixed z-50 w-full p-3">
     <div className="flex justify-between items-center px-5 ">
       {/* Logo on the left */}
-      <div className="flex items-center space-x-2">
-       logo
+      <div className="flex items-center space-x-2 italic">
+      BlissPost
       </div>
 
       {/* Links centered */}
@@ -31,7 +31,7 @@ async function Navbar() {
         user? 
         <>
       
-        <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition duration-300">
+        <button className="bg-[#b07c55] text-white px-4 py-2 rounded-lg transition duration-300">
          <Link href={"/api/auth/logout"}>
         Logout
         </Link>
@@ -39,7 +39,7 @@ async function Navbar() {
       </>
       :
       <>
-       <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-300">
+       <button className="bg-[#b07c55] text-white px-4 py-2 rounded-lg transition duration-300">
           <Link href={"/api/auth/login"}
           >Login</Link>
           
