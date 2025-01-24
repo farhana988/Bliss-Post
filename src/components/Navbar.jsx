@@ -31,7 +31,8 @@ async function Navbar() {
         user? 
         <>
       
-        <button className="bg-[#b07c55] text-white px-4 py-2 rounded-lg transition duration-300">
+        <button className="bg-[#b07c55] hover:bg-[#68452b] text-white 
+        px-3 py-1 rounded-lg transition duration-300">
          <Link href={"/api/auth/logout"}>
         Logout
         </Link>
@@ -39,7 +40,8 @@ async function Navbar() {
       </>
       :
       <>
-       <button className="bg-[#b07c55] text-white px-4 py-2 rounded-lg transition duration-300">
+       <button className="bg-[#b07c55] hover:bg-[#68452b] text-white 
+       px-3 py-1 rounded-lg transition duration-300">
           <Link href={"/api/auth/login"}
           >Login</Link>
           
